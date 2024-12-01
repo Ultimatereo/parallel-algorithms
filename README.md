@@ -1,4 +1,4 @@
 # Parallel Algorithms
 
-## Quicksort Algorithm (sequential and parallel versions)
-## 
+## Implemented Algorithms 
+- [Quicksort Algorithm (sequential and parallel versions)](./quick-sort)
