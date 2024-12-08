@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.Assertions.assertTrue
 import kotlin.random.Random
 import kotlin.system.measureTimeMillis
-import kotlin.test.assertTrue
 
 class SorterPerformanceTest {
 

@@ -16,9 +16,7 @@ Everything is done in Kotlin. Here are descriptions of all the classes
 | **SequentialSorter**  | A data object that implements the `Sorter` interface and performs sorting sequentially (single-threaded). |
 | **ParallelSorter**    | A data object that implements the `Sorter` interface and performs sorting using parallelism (multi-threaded). |
 | **SorterTest**        | A unit test class that verifies the correctness of the sorting algorithms.                          |
-| **SorterPerformanceTest** | A unit test class that measures and compares the performance of the sequential and parallel sorting algorithms. | 
-
-Here’s the updated README section with a table for better clarity:
+| **SorterPerformanceTest** | A unit test class that measures and compares the performance of the sequential and parallel sorting algorithms. |
 
 ---
 
