@@ -50,6 +50,3 @@ The BFS algorithms were tested on a **12th Gen Intel® Core™ i5-12450H process
 
 ### Performance Comparison
 The parallel BFS algorithm is approximately **3.49 times faster** than the sequential BFS algorithm.
-
-### Additional Comments
-Results are not really re
