@@ -16,9 +16,7 @@ Everything is done in Kotlin. Here are descriptions of all the classes
 | **SequentialSorter**  | A data object that implements the `Sorter` interface and performs sorting sequentially (single-threaded). |
 | **ParallelSorter**    | A data object that implements the `Sorter` interface and performs sorting using parallelism (multi-threaded). |
 | **SorterTest**        | A unit test class that verifies the correctness of the sorting algorithms.                          |
-| **SorterPerformanceTest** | A unit test class that measures and compares the performance of the sequential and parallel sorting algorithms. | 
-
-Here’s the updated README section with a table for better clarity:
+| **SorterPerformanceTest** | A unit test class that measures and compares the performance of the sequential and parallel sorting algorithms. |
 
 ---
 
@@ -31,26 +29,26 @@ The sequential sorting implementation processes the array on a single thread.
 
 | **Iteration** | **Time (ms)** |
 |---------------|---------------|
-| 1             | 9516          |
-| 2             | 9425          |
-| 3             | 9423          |
-| 4             | 9462          |
-| 5             | 13534         |
+| 1             | 10003         |
+| 2             | 9501          |
+| 3             | 9590          |
+| 4             | 9396          |
+| 5             | 9731          |
 
-**Average sequential sort time:** **10272.0 ms**
+**Average sequential sort time:** **9644.2 ms**
 
 ### Parallel Sorting
 The parallel sorting implementation leverages multiple threads to process the array concurrently.
 
 | **Iteration** | **Time (ms)** |
 |---------------|---------------|
-| 1             | 4617          |
-| 2             | 3281          |
-| 3             | 2828          |
-| 4             | 2823          |
-| 5             | 2840          |
+| 1             | 2818          |
+| 2             | 2871          |
+| 3             | 2881          |
+| 4             | 2858          |
+| 5             | 2923          |
 
-**Average parallel sort time:** **3277.8 ms**
+**Average parallel sort time:** **2870.2 ms**
 
 ### Performance Comparison
-The parallel sorting algorithm is approximately **3.13 times faster** than the sequential sorting algorithm.
+The parallel sorting algorithm is approximately **3.36 times faster** than the sequential sorting algorithm.

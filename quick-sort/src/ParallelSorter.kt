@@ -17,9 +17,8 @@ data object ParallelSorter : Sorter() {
             } else {
                 coroutineScope {
                     val leftSort = async(dispatcher) { sort(array, low, pivotIndex - 1, threshold) }
-                    val rightSort = async(dispatcher) { sort(array, pivotIndex + 1, high, threshold) }
+                    sort(array, pivotIndex + 1, high, threshold)
                     leftSort.await()
-                    rightSort.await()
                 }
             }
         }
