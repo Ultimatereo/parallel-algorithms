@@ -1,4 +1,4 @@
-sealed class BFSRealization {
+sealed class BFSImplementation {
     abstract fun bfs(edges: List<Set<Int>>?,
                      src: Int, dst: Int,
                      customGetNeighbours : (Int) -> Set<Int> = { _ -> setOf() },

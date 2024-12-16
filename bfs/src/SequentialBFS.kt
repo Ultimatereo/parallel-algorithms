@@ -1,4 +1,4 @@
-data object SequentialBFS : BFSRealization() {
+data object SequentialBFS : BFSImplementation() {
     override fun bfs(
         edges: List<Set<Int>>?,
         src: Int,

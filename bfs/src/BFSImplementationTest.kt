@@ -3,7 +3,7 @@ import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 
-class BFSRealizationTest {
+class BFSImplementationTest {
     @Nested
     @DisplayName("Sequential version BFS Test")
     inner class SequentialBFSTest {
@@ -85,7 +85,7 @@ class BFSRealizationTest {
         }
     }
 
-    fun testBFSWithValidPath(bfsImplementation: BFSRealization) {
+    fun testBFSWithValidPath(bfsImplementation: BFSImplementation) {
         val edges = listOf(
             setOf(1, 2),      // Ребра из вершины 0
             setOf(0, 3),      // Ребра из вершины 1
@@ -103,7 +103,7 @@ class BFSRealizationTest {
     }
 
 
-    fun testBFSWithNoPath(bfsImplementation: BFSRealization) {
+    fun testBFSWithNoPath(bfsImplementation: BFSImplementation) {
         val edges = listOf(
             setOf(1),         // Ребра из вершины 0
             setOf(0),         // Ребра из вершины 1
@@ -120,7 +120,7 @@ class BFSRealizationTest {
     }
 
 
-    fun testBFSWithSingleNode(bfsImplementation: BFSRealization) {
+    fun testBFSWithSingleNode(bfsImplementation: BFSImplementation) {
         val edges = listOf<Set<Int>>(
             emptySet() // Вершина 0, без рёбер
         )
@@ -134,7 +134,7 @@ class BFSRealizationTest {
     }
 
 
-    fun testBFSWithMultipleNodes(bfsImplementation: BFSRealization) {
+    fun testBFSWithMultipleNodes(bfsImplementation: BFSImplementation) {
         val edges = listOf(
             setOf(1),     // Ребра из вершины 0
             setOf(0),     // Ребра из вершины 1
@@ -151,7 +151,7 @@ class BFSRealizationTest {
     }
 
 
-    fun testBFSWithDirectConnection(bfsImplementation: BFSRealization) {
+    fun testBFSWithDirectConnection(bfsImplementation: BFSImplementation) {
         val edges = listOf(
             setOf(1),     // Ребра из вершины 0
             setOf(0, 2),  // Ребра из вершины 1

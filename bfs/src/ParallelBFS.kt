@@ -3,7 +3,7 @@ import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.atomic.AtomicInteger
 import java.util.concurrent.atomic.AtomicIntegerArray
 
-data object ParallelBFS : BFSRealization() {
+data object ParallelBFS : BFSImplementation() {
     @OptIn(ExperimentalCoroutinesApi::class)
     private val dispatcher = Dispatchers.IO.limitedParallelism(4)
 

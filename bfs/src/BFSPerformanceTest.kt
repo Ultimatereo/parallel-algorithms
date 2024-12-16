@@ -4,7 +4,7 @@ import kotlin.system.measureTimeMillis
 
 object BFSPerformanceTest {
 
-    private const val SIDE_LENGTH = 500
+    private const val SIDE_LENGTH = 300
 
     private fun index(x: Int, y: Int, z: Int) = x * SIDE_LENGTH * SIDE_LENGTH + y * SIDE_LENGTH + z
 
@@ -32,7 +32,7 @@ object BFSPerformanceTest {
         runPerformanceTest(SequentialBFS, ParallelBFS)
     }
 
-    private fun runPerformanceTest(seq: BFSRealization, par: BFSRealization) {
+    private fun runPerformanceTest(seq: BFSImplementation, par: BFSImplementation) {
         val src = 0
         val dst = SIDE_LENGTH * SIDE_LENGTH * SIDE_LENGTH- 1
         val size = SIDE_LENGTH * SIDE_LENGTH * SIDE_LENGTH
